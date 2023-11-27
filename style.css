@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#container {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+#burger {
+    position: absolute;
+    left: 85%;
+    top: 2%;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#burger:hover {
+    cursor: pointer;
+    color: rgb(175, 35, 35);
+}
+
+#equis:hover {
+    cursor: pointer;
+    color: rgb(175, 35, 35);
+}
+
+#logo {
+    position: absolute;
+    left: 65%;
+    top: 3%;
+    width: 6rem;
+}
+
+#menu-lateral {
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    border-left: 4px solid rgb(175, 35, 35);
+    position: absolute;
+    left: 30%;
+    display: none;
+    z-index: 1200;
+}
+
+#menu-lateral a {
+    color: black;
+}
+
+#menu-lateral a:hover {
+    color: rgb(175, 35, 35);
+    font-weight: bold;
+}
+
+#landing {
+    height: 90vh;
+    width: 100%;
+    background-image: url("./img/lorgaLanding.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+
+h1 {
+    text-shadow: 2px 2px 8px black;
+    font-size: 3rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 1s;
+}
+*:not(h1,h2,.text-uppercase){
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-uppercase {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(175, 35, 35);
+    text-shadow: 1px 1px 1px rgb(106, 106, 106);
+}
+
+#introduccion {
+    height: auto;
+    width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+#historia {
+    height: auto;
+    width: 100%;
+    background-image: url("./img/MostradorFuera.jpg");
+    background-position: 60%;
+    background-size: cover;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#productos {
+    height: auto;
+    width: 100%;
+}
+
+.card {
+    width: 80%;
+    height: 20rem;
+    margin-top: 5%;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 1px black;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+#ubicacion {
+    height: auto;
+    width: 100%;
+    background-color: rgb(175, 35, 35);
+    color: white;
+    margin-top: 10%;
+    padding-bottom: 10%;
+}
+
+#barbacoas {
+    height: auto;
+    width: 100%;
+}
+
+#footer {
+    height: auto;
+    width: 100%;
+    background-color: rgb(175, 35, 35);
+    color: white;
+}
+
+#derechos {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#derechos {
+    font-size: 0.7rem;
+    margin-top: 4%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#sticky {
+    position: sticky;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: rgb(175, 35, 35);
+    border: 2px solid white;
+    top: 90%;
+    left: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+swiper-container {
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.swiper-navigation-color{
+    color: red !important;
+}
+
+.swiper-button-next {
+    color: red !important;
+}
+
+.slide1 {
+    background-image: url("./img/bocaditos\ alitas.png");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+.slide2 {
+    background-image: url("./img/hamburguesa2.png");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+.slide3 {
+    background-image: url("./img/Pollo\ al\ limon.png");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+.slide4 {
+    background-image: url("./img/Elaborados.jpeg");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+.slide5 {
+    background-image: url("./img/Jamones.jpeg");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+.slide6 {
+    background-image: url("./img/pollo.jpg");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+#todosProductos{
+    background-color: rgb(175, 35, 35);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 12%;
+    padding-left: 12%;
+    margin: auto;
+}
+#irAlli{
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin: auto;
+    margin-top: 10%;
+}
+#irAlli a{
+    color: rgb(175, 35, 35);
+}
+#equipo {
+    height: auto;
+    width: 100%;
+}
+.etiqueta{
+    height: 27vh;
+    background-color: rgb(175, 35, 35);
+    color: white;
+    margin-top: -10%;
+    padding-bottom: 4%;
+    border: 4px solid white;
+}
+.rowProductos{
+    width: 90%;
+    margin-top: 3%;
+}
+.cardProducto{
+    width: 48%;
+}
+.imgProducto{
+    width: 100%;
+    height: 25vh;
+}
+
+@media (min-width: 950px) {
+    #landing {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 10% 25%;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .text-uppercase {
+        font-size: 1.2rem;
+    }
+
+    #historia {
+        height: auto;
+        min-height: 100vh;
+        margin-top: 2%;
+        background-size: cover;
+        background-position: 0% 60%;
+    }
+
+    #contenedorCards {
+        flex-direction: row !important;
+    }
+
+    .card {
+        margin: 2%;
+    }
+
+    #menu-lateral {
+        width: 40%;
+        left: 60%;
+    }
+    swiper-container{
+        width: 50%;
+        height: 70vh;
+        margin-left: 25% !important;
+    }
+    #barbacoas2{
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-bottom: 3%;
+        padding-top: 2%;
+    }
+    #barbacoas2 div{
+        margin-left: 2%;
+    }
+    #todosProductos{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin: auto;
+        margin-top: 3%;
+    }
+    #irAlli{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin: auto;
+        margin-top: 3%;
+    }
+    #ubicacion{
+        padding-bottom: 3%;
+        margin-top: 2%;
+    }
+    #productos{
+        padding-bottom: 3%;
+    }
+    #logoIntroduccion{
+        width: 30% !important;
+    }
+    #divIntroduccion{
+        flex-direction: row !important;
+        margin-top: 2% !important;
+        margin-bottom: 3% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #divEquipo{
+        flex-direction: row !important;
+    }
+    #equipo2{
+        margin-top: 0 !important;
+    }
+    .etiqueta{
+        width: 100% !important;
+    }
+    .etiqueta2{
+        margin-top: -5.88%;
+    }
+    #divFooter{
+        flex-direction: row !important;
+    }
+    #divFooter2{
+        margin-top: 12% !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+    }
+    .rowProductos{
+        width: 90%;
+        margin-top: 3%;
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+    .cardProducto{
+        width: 90%;
+        height: 50vh;
+        flex-wrap: wrap;
+    }
+    .imgProducto{
+        width: 100%;
+        height: 45vh;
+    }
+    #divProductos{
+        flex-direction: row !important;
+    }
+}
